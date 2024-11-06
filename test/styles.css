@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.game {
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+p {
+    color: white;
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+.end {
+    margin-left: 46%;
+}
