@@ -1,25 +1,36 @@
-var path1 = 0;
-var path2 = 0;
-
 //Fork 1
 document.getElementById('fork1-1').addEventListener('click', function(event) {
-    path1++;
+    //Original Route
 
     document.getElementById('fork1').style.display = 'none';
     document.getElementById('fork1-1').style.display = 'none';
     document.getElementById('fork1-2').style.display = 'none';
+    document.getElementById('fork1-3').style.display = 'none';
 
-    document.getElementById('fork2').style.display = 'inline-block';
-    document.getElementById('fork2-1').style.display = 'inline-block';
-    document.getElementById('fork2-2').style.display = 'inline-block';
+    document.getElementById('fork3').style.display = 'inline-block';
+    document.getElementById('fork3-1').style.display = 'inline-block';
+    document.getElementById('fork3-2').style.display = 'inline-block';
 });
 
 document.getElementById('fork1-2').addEventListener('click', function(event) {
-    path2++;
+    //Maternal Route
 
     document.getElementById('fork1').style.display = 'none';
     document.getElementById('fork1-1').style.display = 'none';
     document.getElementById('fork1-2').style.display = 'none';
+    document.getElementById('fork1-3').style.display = 'none';
+
+    document.getElementById('m-route').style.display = 'inline-block';
+    document.getElementById('end1').style.display = 'inline-block';
+});
+
+document.getElementById('fork1-3').addEventListener('click', function(event) {
+    //Docile Route
+
+    document.getElementById('fork1').style.display = 'none';
+    document.getElementById('fork1-1').style.display = 'none';
+    document.getElementById('fork1-2').style.display = 'none';
+    document.getElementById('fork1-3').style.display = 'none';
 
     document.getElementById('fork2').style.display = 'inline-block';
     document.getElementById('fork2-1').style.display = 'inline-block';
@@ -28,19 +39,19 @@ document.getElementById('fork1-2').addEventListener('click', function(event) {
 
 //Fork 2
 document.getElementById('fork2-1').addEventListener('click', function(event) {
-    path1++;
+    //Docile Route
 
     document.getElementById('fork2').style.display = 'none';
     document.getElementById('fork2-1').style.display = 'none';
     document.getElementById('fork2-2').style.display = 'none';
 
-    document.getElementById('fork3').style.display = 'inline-block';
-    document.getElementById('fork3-1').style.display = 'inline-block';
-    document.getElementById('fork3-2').style.display = 'inline-block';
+    document.getElementById('fork4').style.display = 'inline-block';
+    document.getElementById('fork4-1').style.display = 'inline-block';
+    document.getElementById('fork4-2').style.display = 'inline-block';
 });
 
 document.getElementById('fork2-2').addEventListener('click', function(event) {
-    path2++;
+    //Original Route
 
     document.getElementById('fork2').style.display = 'none';
     document.getElementById('fork2-1').style.display = 'none';
@@ -53,25 +64,95 @@ document.getElementById('fork2-2').addEventListener('click', function(event) {
 
 //Fork 3
 document.getElementById('fork3-1').addEventListener('click', function(event) {
-    path1++;
+    //Original Route
 
     document.getElementById('fork3').style.display = 'none';
     document.getElementById('fork3-1').style.display = 'none';
     document.getElementById('fork3-2').style.display = 'none';
 
-    endGame();
+    document.getElementById('fork5').style.display = 'inline-block';
+    document.getElementById('fork5-1').style.display = 'inline-block';
+    document.getElementById('fork5-2').style.display = 'inline-block';
 });
 
 document.getElementById('fork3-2').addEventListener('click', function(event) {
-    path2++;
+    //Sabotage Route
 
     document.getElementById('fork3').style.display = 'none';
     document.getElementById('fork3-1').style.display = 'none';
     document.getElementById('fork3-2').style.display = 'none';
 
-    endGame();
+    document.getElementById('fork7').style.display = 'inline-block';
+    document.getElementById('fork7-1').style.display = 'inline-block';
+    document.getElementById('fork7-2').style.display = 'inline-block';
 });
 
+//Fork 4
+document.getElementById('fork4-1').addEventListener('click', function(event) {
+    //Docile Route
+
+    document.getElementById('fork4').style.display = 'none';
+    document.getElementById('fork4-1').style.display = 'none';
+    document.getElementById('fork4-2').style.display = 'none';
+
+    document.getElementById('d-route').style.display = 'inline-block';
+    document.getElementById('end2').style.display = 'inline-block';
+});
+
+document.getElementById('fork4-2').addEventListener('click', function(event) {
+    //Original Route
+
+    document.getElementById('fork4').style.display = 'none';
+    document.getElementById('fork4-1').style.display = 'none';
+    document.getElementById('fork4-2').style.display = 'none';
+
+    document.getElementById('fork3').style.display = 'inline-block';
+    document.getElementById('fork3-1').style.display = 'inline-block';
+    document.getElementById('fork3-2').style.display = 'inline-block';
+});
+
+//Fork 5
+document.getElementById('fork5-1').addEventListener('click', function(event) {
+    //Original Route
+
+    document.getElementById('fork5').style.display = 'none';
+    document.getElementById('fork5-1').style.display = 'none';
+    document.getElementById('fork5-2').style.display = 'none';
+
+    document.getElementById('fork6').style.display = 'inline-block';
+    document.getElementById('fork6-1').style.display = 'inline-block';
+    document.getElementById('fork6-2').style.display = 'inline-block';
+});
+
+document.getElementById('fork5-2').addEventListener('click', function(event) {
+    //some route
+
+    document.getElementById('fork5').style.display = 'none';
+    document.getElementById('fork5-1').style.display = 'none';
+    document.getElementById('fork5-2').style.display = 'none';
+});
+
+//Fork 6
+document.getElementById('fork6-1').addEventListener('click', function(event) {
+    //Original Route
+
+    document.getElementById('fork6').style.display = 'none';
+    document.getElementById('fork6-1').style.display = 'none';
+    document.getElementById('fork6-2').style.display = 'none';
+
+    document.getElementById('o-route').style.display = 'inline-block';
+    document.getElementById('end3').style.display = 'inline-block';
+});
+
+document.getElementById('fork6-2').addEventListener('click', function(event) {
+    //some route
+
+    document.getElementById('fork6').style.display = 'none';
+    document.getElementById('fork6-1').style.display = 'none';
+    document.getElementById('fork6-2').style.display = 'none';
+});
+
+/*
 //End
 function endGame() {
     if (path1+path2 == 3) {
@@ -82,4 +163,4 @@ function endGame() {
             document.getElementById('end2').style.display = 'flex';
         }
     }
-}
+}*/
