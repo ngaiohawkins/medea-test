@@ -22,6 +22,7 @@ document.getElementById('fork1-2').addEventListener('click', function(event) {
 
     document.getElementById('m-route').style.display = 'inline-block';
     document.getElementById('end1').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 document.getElementById('fork1-3').addEventListener('click', function(event) {
@@ -59,6 +60,7 @@ document.getElementById('fork2-2').addEventListener('click', function(event) {
 
     document.getElementById('d-route').style.display = 'inline-block';
     document.getElementById('end2').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 //Fork 3
@@ -145,6 +147,7 @@ document.getElementById('fork6-1').addEventListener('click', function(event) {
 
     document.getElementById('o-route').style.display = 'inline-block';
     document.getElementById('end3').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 //Fork 7
@@ -157,6 +160,7 @@ document.getElementById('fork7-1').addEventListener('click', function(event) {
 
     document.getElementById('s1-route').style.display = 'inline-block';
     document.getElementById('end4').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 document.getElementById('fork7-2').addEventListener('click', function(event) {
@@ -218,6 +222,7 @@ document.getElementById('fork9-2').addEventListener('click', function(event) {
 
     document.getElementById('s2-route').style.display = 'inline-block';
     document.getElementById('end5').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 //Fork 10
@@ -242,6 +247,7 @@ document.getElementById('fork9-2').addEventListener('click', function(event) {
 
     document.getElementById('s2-route').style.display = 'inline-block';
     document.getElementById('end5').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 //Fork 11
@@ -306,6 +312,7 @@ document.getElementById('fork13-1').addEventListener('click', function(event) {
 
     document.getElementById('s3-route').style.display = 'inline-block';
     document.getElementById('end6').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 document.getElementById('fork13-2').addEventListener('click', function(event) {
@@ -318,6 +325,7 @@ document.getElementById('fork13-2').addEventListener('click', function(event) {
 
     document.getElementById('s4-route').style.display = 'inline-block';
     document.getElementById('end7').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 document.getElementById('fork13-3').addEventListener('click', function(event) {
@@ -330,6 +338,7 @@ document.getElementById('fork13-3').addEventListener('click', function(event) {
 
     document.getElementById('s5-route').style.display = 'inline-block';
     document.getElementById('end8').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 //Fork 14
@@ -342,6 +351,7 @@ document.getElementById('fork14-1').addEventListener('click', function(event) {
 
     document.getElementById('s6-route').style.display = 'inline-block';
     document.getElementById('end9').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 //Fork 15
@@ -354,6 +364,7 @@ document.getElementById('fork15-1').addEventListener('click', function(event) {
 
     document.getElementById('s7-route').style.display = 'inline-block';
     document.getElementById('end10').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 document.getElementById('fork15-2').addEventListener('click', function(event) {
@@ -365,6 +376,7 @@ document.getElementById('fork15-2').addEventListener('click', function(event) {
 
     document.getElementById('s8-route').style.display = 'inline-block';
     document.getElementById('end11').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
 });
 
 document.getElementById('fork15-2').addEventListener('click', function(event) {
@@ -376,4 +388,15 @@ document.getElementById('fork15-2').addEventListener('click', function(event) {
 
     document.getElementById('s9-route').style.display = 'inline-block';
     document.getElementById('end12').style.display = 'inline-block';
+    document.getElementById('again').style.display = 'inline-block';
+});
+
+//Replay
+function refreshTab() {
+    location.reload();
+}
+  
+document.getElementById('again').addEventListener('click', function(event) {
+    event.stopPropagation();
+    refreshTab();
 });
